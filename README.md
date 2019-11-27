@@ -18,18 +18,20 @@ applications.
 2. Change into the new directory.
 3. Fulfill the listed requirements.
 
-Starter code is available in [`lib/challenge.js`](lib/challenge.js). You are
-required to turn in your submission by making a pull request on the original
-repository.
+Starter code is available in [`lib/`](lib/). You are required to turn in your
+submission by making a pull request on the original repository.
 
 ## Requirements
 
 ### Part 1
 
-First, use `fetch()` to make a GET request to the Cat API and console log the response object.
+First, use `fetch()` to make a GET request to the Cat API and console log the
+response object.
 
-- Navigate to the [Cat API Documentation](https://docs.thecatapi.com/) and read through the documentation.
-- In `script.js`, use `fetch()` and the "Get a Random Kitty" URL to make a GET request and console log the response object.
+- Navigate to the [Cat API Documentation](https://docs.thecatapi.com/) and read
+  through the documentation.
+- In `script.js`, use `fetch()` and the "Get a Random Kitty" URL to make a GET
+  request and console log the response object.
 
 > How will you know if your request was successful?
 
@@ -39,14 +41,14 @@ Next, use the Cat API to display an image of a random cat every time the user
 clicks a button! You will add functionality to the Random Cat button that has
 been provided for you.
 
-- Add functionality so that when the Random Cat button is clicked, an image of
-   a random cat appears!
+- Add functionality so that when the Random Cat button is clicked, an image of a
+  random cat appears!
 
 ### Part 3
 
-Finally, you will add a search feature to the form in the starter code. To utilize
-this API's search functionality, you will need to request and use an API key.
-The key will go in a fetch object called headers. Check out the
+Finally, you will add a search feature to the form in the starter code. To
+utilize this API's search functionality, you will need to request and use an API
+key. The key will go in a fetch object called headers. Check out the
 [fetch documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 to learn more about this!
 
@@ -64,12 +66,12 @@ fetch('www.randomURL.com', {
 
 Adding the API key allows you to utilize all that the Cat API has to offer!
 
-- Go to the [Cat API web site](https://thecatapi.com/) and request an API key
-   by clicking SIGN UP FOR FREE. The key will be emailed to you right away.
+- Go to the [Cat API web site](https://thecatapi.com/) and request an API key by
+  clicking SIGN UP FOR FREE. The key will be emailed to you right away.
 - In the email, click API DOCUMENTATION and read through it to learn how to use
-   the Cat API to its fullest capacity.
+  the Cat API to its fullest capacity.
 - Add functionality so that when a user enters a category's ID number into the
-   input field, a random cat from that category appears!
+  input field, a random cat from that category appears!
 
 ### Bonus
 
