@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><body>
+    <h1>Hi</h1>
+    <form>
+        <input type="text" placeholder="type a number">
+    </form>
+    <section class='characters'>    </section>    <script>
+        let form = document.querySelector('form');
+        let section = document.querySelector('section');
+        function setName(event) {
+            event.preventDefault();
+            let number = event.target[0].value;
+            let url = 'https://swapi.dev/api/starships/' + number;
+            fetch(url)
+                .then(res => res.json())
+                .then(json => {
+                    let h2 = document.createElement('h2');
+                    h2.innerHTML = json.name;
+                    section.appendChild(h2);
+                })
+                .catch(err => console.log('oops something went wrong', err))
+        }        form.addEventListener('submit', setName)
+    </script>
+</body></html>
